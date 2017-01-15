@@ -1,7 +1,7 @@
 html, body{
     font-family: 'Open Sans', sans-serif;
     font-size: 100%;
-  	background: #FFf;
+  	background: #10480d;
 }
 body a{
 	transition:0.5s all;
@@ -1118,7 +1118,7 @@ ul.social-icons.two {
 .mail_left img{
 	width:100%;
 }
-.mail_right input[type="text"], .mail_right input[type="email"], .mail_right textarea {
+.mail_right input[type="text"], .mail_right input[type="email"], .mail_right input[type="tel"], .mail_right textarea {
        background: none;
     width: 100%;
     color: white;
