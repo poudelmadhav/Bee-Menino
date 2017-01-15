@@ -1500,13 +1500,14 @@ span.border.two:after {
 	.mail_right input[type="text"], .mail_right input[type="email"], .mail_right textarea {
 		background: none;
 		width: 100%;
-		color: #777;
+		color: #fff;
 		padding: 10px 10px;
 		margin-bottom: 12px;
 		outline: none;
 		border: 2px solid #00a78e;
 		font-size: 0.9em;
 	}
+
 	.mail_right textarea {
 		height: 100px;
 		resize: none;
