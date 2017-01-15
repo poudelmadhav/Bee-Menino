@@ -1497,6 +1497,16 @@ span.border.two:after {
 	}
 }
 @media(max-width:640px){
+#home {
+    background: url(../images/header-bg.JPG) no-repeat center center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    min-height:650px;
+	position: relative;
+}
 	.mail_right input[type="text"], .mail_right input[type="email"], .mail_right textarea {
 		background: none;
 		width: 100%;
