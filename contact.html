@@ -1,7 +1,8 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Bee Menino</title>
+<title>Menino</title>
+<link rel="shortcut icon" href="images/favicon.png" >
 <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="js/jquery.min.js"></script>
@@ -28,6 +29,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			});
 		</script>
  <!---- start-smoth-scrolling---->
+ <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 	<body>
 		<!-- container -->
@@ -111,11 +113,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             </div>
             <div class="col-md-6 mail_right">
                 <form action="https://formspree.io/iammr.bee02@gmail.com" method="POST">
-                    <input type="text" name="Name" value="" required="" placeholder="Name">
-                    <input type="email" name="Email" value="" required="" placeholder="Email">
-                    <input type="text" name="Mobile Number" value="" required="" placeholder="Mobile Number">
-                    <textarea name="Message..." value="" required="" placeholder="Message..."></textarea>
+                    <input type="text" name="Name" value="" required aria-required="true" placeholder="Name">
+                    <input type="email" name="Email" value="" required aria-required="true" placeholder="Email">
+                    <input type="tel" name="Mobile Number" value="" placeholder="Mobile Number">
+                    <textarea name="Message..." value="" required aria-required="true" placeholder="Message..."></textarea>
+                    <div class="g-recaptcha" data-sitekey="6LfqQRIUAAAAAGGbYbvj4ebOyqRgimFgtiBHWNCA"></div>
                     <input type="submit" value="SUBMIT">
+                    <input type="hidden" name="_next" value="thankyou.html" />
                     
                 </form>
             </div>
@@ -125,7 +129,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <p>&copy; 2017 Bee Menino. All rights reserved.</a></p>
              <ul class="social-icons two">
                             <li><a href="http://facebook.com/cod.menino02" target="_blank" class="fb"> </a></li>
-                            <li><a href="#" class="in"> </a></li>
+                            <li><a href="https://plus.google.com/u/0/101629559255663233866" target="_blank" class="in"> </a></li>
                         </ul>
         </div>
     </div>
