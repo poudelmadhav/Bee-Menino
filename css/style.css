@@ -2049,6 +2049,11 @@ textarea:focus {
   margin-bottom: 5%;
   text-decoration: none;
 }
+if (grecaptcha.getResponse() == ""){
+    alert("You can't proceed!");
+} else {
+    alert("Thank you");
+}
 span.wpcf7-not-valid-tip {
     color: #f00;
     font-size: 1em;
