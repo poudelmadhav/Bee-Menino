@@ -116,20 +116,7 @@
                     <input type="email" name="Email" value="" required aria-required="true" placeholder="Email">
                     <input type="tel" name="Mobile Number" value="" placeholder="Mobile Number">
                     <textarea name="Message..." value="" required aria-required="true" placeholder="Message..."></textarea>
-                    <div class="g-recaptcha" data-sitekey="6LfqQRIUAAAAAGGbYbvj4ebOyqRgimFgtiBHWNCA" data-callback="recaptcha"></div>
-		<button type="submit" class="btn btn-default hidden" id="btnSubmit">Submit</button>
-</form>
-
-<script>
-    function recaptchaCallback() {
-        var btnSubmit = document.getElementById("btnSubmit");
-
-        if ( btnSubmit.classList.contains("hidden") ) {
-            btnSubmit.classList.remove("hidden");
-            btnSubmitclassList.add("show");
-        }
-    }
-</script>
+                    <div class="g-recaptcha" data-sitekey="6LfqQRIUAAAAAGGbYbvj4ebOyqRgimFgtiBHWNCA"></div>
                     <input type="submit" value="SUBMIT">
                     <input type="hidden" name="_next" value="thankyou.html" />
                     
