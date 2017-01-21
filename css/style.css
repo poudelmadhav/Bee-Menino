@@ -2049,13 +2049,14 @@ textarea:focus {
   margin-bottom: 5%;
   text-decoration: none;
 }
+var googleResponse = jQuery('#g-recaptcha-response').val();
+if (!googleResponse) {
+        $('<p style="color:red !important" class=error-captcha"><span class="glyphicon glyphicon-remove " ></span> Please fill up the captcha.</p>" ').insertAfter("#html_element");
+        return false;
+    } else {
 
-.getResponse()
-if (grecaptcha.getResponse() == ""){
-    alert("You can't proceed!");
-} else {
-    alert("Thank you");
-}
+        return true;
+    }
 
 span.wpcf7-not-valid-tip {
     color: #f00;
