@@ -2050,6 +2050,7 @@ textarea:focus {
   text-decoration: none;
 }
 
+.getResponse()
 if (grecaptcha.getResponse() == ""){
     alert("You can't proceed!");
 } else {
