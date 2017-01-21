@@ -2049,27 +2049,3 @@ textarea:focus {
   margin-bottom: 5%;
   text-decoration: none;
 }
-var captchResponse = $('#g-recaptcha-response').val();
-if(captchResponse.length == 0 )
-    //user has not yet checked the 'I am not a robot' checkbox
-else 
-    //user is a verified human and you are good to submit your form now
-var isCaptchaValidated = false;
-var response = grecaptcha.getResponse();
-if(response.length == 0) {
-    isCaptchaValidated = false;
-    toast('Please verify that you are a Human.');
-} else {
-    isCaptchaValidated = true;
-}
-
-
-if (isCaptchaValidated ) {
-    //you can now submit your form
-}
-
-span.wpcf7-not-valid-tip {
-    color: #f00;
-    font-size: 1em;
-    display: block;
-}
