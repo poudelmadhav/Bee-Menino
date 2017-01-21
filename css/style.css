@@ -2049,14 +2049,24 @@ textarea:focus {
   margin-bottom: 5%;
   text-decoration: none;
 }
-var googleResponse = jQuery('#g-recaptcha-response').val();
-if (!googleResponse) {
-        $('<p style="color:red !important" class=error-captcha"><span class="glyphicon glyphicon-remove " ></span> Please fill up the captcha.</p>" ').insertAfter("#html_element");
-        return false;
-    } else {
+var captchResponse = $('#g-recaptcha-response').val();
+if(captchResponse.length == 0 )
+    //user has not yet checked the 'I am not a robot' checkbox
+else 
+    //user is a verified human and you are good to submit your form now
+var isCaptchaValidated = false;
+var response = grecaptcha.getResponse();
+if(response.length == 0) {
+    isCaptchaValidated = false;
+    toast('Please verify that you are a Human.');
+} else {
+    isCaptchaValidated = true;
+}
 
-        return true;
-    }
+
+if (isCaptchaValidated ) {
+    //you can now submit your form
+}
 
 span.wpcf7-not-valid-tip {
     color: #f00;
